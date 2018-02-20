@@ -1,10 +1,14 @@
-function Greeter(g: string) {
-    this.greeting = g
+class Greeter {
+    greeting: string
+    constructor(g: string) {
+        this.greeting = g
+    }
+
+    greet() {
+        return 'Hello' + this.greeting
+    }
 }
 
-Greeter.prototype.greet = function () {
-    return 'Hello' + this.greeting
-}
 
 
 let greeter = new Greeter("world")
@@ -12,6 +16,7 @@ let greeter = new Greeter("world")
 let greeter2 = new Greeter("world2")
 
 
-let button = document.createElement('button')
+console.log(greeter.greeting)
 
-button.textContent = 'sayHello'
+console.log('here')
+alert('123')
