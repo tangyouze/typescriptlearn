@@ -10,6 +10,12 @@ var Greeter = /** @class */ (function () {
 }());
 var greeter = new Greeter("world");
 var greeter2 = new Greeter("world2");
-console.log(greeter.greeting);
-console.log('here');
-alert('123');
+function getMyName() {
+    return "hello";
+}
+window.onload = function () {
+    console.log(greeter.greeting);
+    console.log('here');
+    console.log(getMyName());
+};
+//# sourceMappingURL=a.js.map
